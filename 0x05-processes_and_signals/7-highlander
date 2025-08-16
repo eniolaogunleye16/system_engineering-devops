@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-# A Bash script that displays "To infinity and beyond" with PID, stops on SIGTERM
+# Prints the phrase indefinitely and handles SIGTERM by declaring invincibility
 
-trap "echo 'I am invincible!!!'; exit" SIGTERM
+trap 'echo "I am invincible!!!"' SIGTERM
 
 while true; do
   echo "To infinity and beyond"
   sleep 2
 done
-
