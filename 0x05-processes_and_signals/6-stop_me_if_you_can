@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that stops 4-to_infinity_and_beyond process without using kill or pkill
+# Stops the 4-to_infinity_and_beyond process using pkill
 
-ps aux | grep '[4]-to_infinity_and_beyond' | awk '{print $2}' | xargs -r kill
+pkill -f 4-to_infinity_and_beyond
