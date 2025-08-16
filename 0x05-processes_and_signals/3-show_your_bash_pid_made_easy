@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A Bash script that displays the PID of the current bash process using $$
+
+echo $$
